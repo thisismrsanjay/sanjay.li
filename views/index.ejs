@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>URL-Shortner</title>
+    <link rel="stylesheet" href="https://bootswatch.com/4/minty/bootstrap.min.css" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="jumbotron bg bg-primary text-center text-white ">
+        <h1 class="display-3 text-white">sanjay.li</h1>
+        <p class="lead">This is a simple URL shortner,paste your extra extra long links here and get a minified version of it.</p>
+        <hr class="my-4">
+
+        <form method="post" action="/api/sanjay">
+            <div class="form-group  ">
+                <input name="url" class="form-control form-control-lg mx-auto " style="max-width :900px" type="text" placeholder="Paste Your URL here:"
+                    id="inputLarge">
+            </div>
+            <br>
+            <div class="form-group inline  ">
+                    <label for="name">sanjay.li/</label>
+                <input name="name" class="form-control form-control-lg mx-auto " style="max-width :900px" type="text" placeholder="Name:"
+                    id="inputLarge">
+            </div>
+            <button type="submit" class="btn btn-secondary btn-lg">shrink</button>
+        </form>
+            <% console.log(typeof url) %>
+          <% if(typeof url ) {%>
+            <p>URL wefaf</p>
+        <%}else{%>
+            <p>WHy</p>
+            <%}%>  
+        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+    </div>
+
+   
+</body>
+
+</html>
